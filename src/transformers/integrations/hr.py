@@ -1,4 +1,5 @@
-"HR-VQLoRA Hierarchical Residual integration file"
+# HR-VQLoRA Hierarchical Residual integration file
+# Currently unused by HRQuantizer
 
 from ..utils import is_torch_available, logging
 
