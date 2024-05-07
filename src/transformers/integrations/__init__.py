@@ -44,6 +44,7 @@ _import_structure = {
     ],
     "eetq": ["replace_with_eetq_linear"],
     "hqq": ["prepare_for_hqq_linear"],
+    "hr": ["replace_with_hr_linear"],
     "integration_utils": [
         "INTEGRATION_TO_CALLBACK",
         "AzureMLCallback",

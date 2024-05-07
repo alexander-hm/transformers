@@ -22,6 +22,7 @@ from ..utils.quantization_config import (
     EetqConfig,
     GPTQConfig,
     HqqConfig,
+    HRConfig,
     QuantizationConfigMixin,
     QuantizationMethod,
     QuantoConfig,
@@ -33,6 +34,7 @@ from .quantizer_bnb_8bit import Bnb8BitHfQuantizer
 from .quantizer_eetq import EetqHfQuantizer
 from .quantizer_gptq import GptqHfQuantizer
 from .quantizer_hqq import HqqHfQuantizer
+from .quantizer_hr import HRQuantizer
 from .quantizer_quanto import QuantoHfQuantizer
 
 
@@ -45,6 +47,7 @@ AUTO_QUANTIZER_MAPPING = {
     "quanto": QuantoHfQuantizer,
     "eetq": EetqHfQuantizer,
     "hqq": HqqHfQuantizer,
+    "HR": HRQuantizer,
 }
 
 AUTO_QUANTIZATION_CONFIG_MAPPING = {
@@ -56,6 +59,7 @@ AUTO_QUANTIZATION_CONFIG_MAPPING = {
     "aqlm": AqlmConfig,
     "quanto": QuantoConfig,
     "hqq": HqqConfig,
+    "HR": HRConfig,
 }
 
 

@@ -1135,6 +1135,7 @@ _import_structure = {
         "GPTQConfig",
         "HqqConfig",
         "QuantoConfig",
+        "HRConfig",
     ],
 }
 

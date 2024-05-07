@@ -66,7 +66,6 @@ class AwqBackendPackingMethod(str, Enum):
     AUTOAWQ = "autoawq"
     LLMAWQ = "llm-awq"
 
-
 @dataclass
 class QuantizationConfigMixin:
     """
@@ -1038,3 +1037,13 @@ class EetqConfig(QuantizationConfigMixin):
         accepted_weights = ["int8"]
         if self.weights not in accepted_weights:
             raise ValueError(f"Only support weights in {accepted_weights} but found {self.weights}")
+
+# ---------- HR-VQLORA ---------- #
+@dataclass
+class HRConfig(QuantizationConfigMixin):
+    """
+    Hierarchical quantization config
+    """
+    @classmethod
+    def __init__():
+        return
