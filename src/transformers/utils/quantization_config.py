@@ -42,6 +42,7 @@ class QuantizationMethod(str, Enum):
     QUANTO = "quanto"
     EETQ = "eetq"
     HQQ = "hqq"
+    HR = "hr"
 
 
 class AWQLinearVersion(str, Enum):
